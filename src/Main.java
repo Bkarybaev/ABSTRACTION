@@ -1,15 +1,17 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
+        Car car1 = new BMW("BMW x6","black","300");
+        Car car2 = new BMW("BMW x5","red","200");
+        Car car3 = new Mers("Luparick","black","500");
+        Car car4 = new Mers("e 124","white","600");
+        car1.gas();
+        car2.gas();
+        car3.gas();
+        car4.gas();
+        car1.brake();
+        car2.brake();
+        car3.brake();
+        car4.brake();
 
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            System.out.println("i = " + i);
-        }
     }
 }
